@@ -1,13 +1,14 @@
 using System;
-using NUnit.Framework;
 using Common.Redis;
+using NUnit.Framework;
 
 namespace Common.UnitTest
 {
     public class RedisTest
     {
-        private RedisConfig config;
         private IRedisClient _redisClient;
+        private RedisConfig config;
+
         [SetUp]
         public void Setup()
         {
@@ -33,14 +34,8 @@ namespace Common.UnitTest
             Console.WriteLine($"Delete-key1Value:{key1Value}");
             var channel = "redis-channel-test";
             _redisClient.Publish(channel, "start1");
-            _redisClient.Subscribe(channel, (c, v) =>
-            {
-                Console.WriteLine($"订阅信息-通道{c}-内容-{v}");
-            });
-            for (int i = 0; i < 100; i++)
-            {
-                _redisClient.Publish(channel, "循环-index-" + i);
-            }
+            _redisClient.Subscribe(channel, (c, v) => { Console.WriteLine($"订阅信息-通道{c}-内容-{v}"); });
+            for (var i = 0; i < 100; i++) _redisClient.Publish(channel, "循环-index-" + i);
 
             Assert.Pass();
         }

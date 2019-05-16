@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.UnitTest", "Common.U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Console", "Common.Console\Common.Console.csproj", "{34E186F8-A1AC-4618-B0D2-29C94CB97ED8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{73095B05-497C-4504-BC72-88C62C772691}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{84D0E8B7-BE8B-45EF-8A45-28AB56888E40} = {73095B05-497C-4504-BC72-88C62C772691}
+		{34E186F8-A1AC-4618-B0D2-29C94CB97ED8} = {73095B05-497C-4504-BC72-88C62C772691}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {201129B5-6BC1-47B6-B55D-C2C6D419D421}

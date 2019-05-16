@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Common.Redis.Args
+﻿namespace Common.Redis.Args
 {
     public class RedisErrorEventArgs
     {
@@ -13,12 +9,12 @@ namespace Common.Redis.Args
         }
 
         /// <summary>
-        /// The origin of the message
+        ///     The origin of the message
         /// </summary>
         public string EndPoint { get; }
 
         /// <summary>
-        /// The message from the server
+        ///     The message from the server
         /// </summary>
         public string Message { get; }
     }
