@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.Console", "Common.Co
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{73095B05-497C-4504-BC72-88C62C772691}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common.RabbitMQ", "Common.RabbitMQ\Common.RabbitMQ.csproj", "{1921C880-5B65-4399-96B5-E0D0D9C6E537}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{34E186F8-A1AC-4618-B0D2-29C94CB97ED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34E186F8-A1AC-4618-B0D2-29C94CB97ED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34E186F8-A1AC-4618-B0D2-29C94CB97ED8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1921C880-5B65-4399-96B5-E0D0D9C6E537}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1921C880-5B65-4399-96B5-E0D0D9C6E537}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1921C880-5B65-4399-96B5-E0D0D9C6E537}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1921C880-5B65-4399-96B5-E0D0D9C6E537}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

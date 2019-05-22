@@ -3,6 +3,9 @@ using Common.Redis.Args;
 
 namespace Common.Redis
 {
+    /// <summary>
+    ///     Redis客户端接口
+    /// </summary>
     public interface IRedisClient : IDisposable
     {
         /// <summary>
