@@ -51,6 +51,11 @@ namespace Common.Console
             {
                 Host = "192.168.2.22"
             };
+            // 正确用法
+            //using (IRedisClient redisClient = new RedisClient(config))
+            //{
+            //    //redisClient.Add()
+            //}
             var _redisClient = new RedisClient(config);
 
             var key1 = "key1";
